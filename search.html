@@ -5,10 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-
-    <title>Search</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>SearchCom</title>
 </head>
 <body>
+    <div class="container">
+        <!-- start of navBar -->
+        <nav class="navBar"> 
+            <!-- note this will only display on small screen -->
+            <div class="ham_buger_icon">
+                <!-- this is were the ham burger will go -->
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- start of navlinks -->
+            <div class="navlinks">
+                <!-- this one will change according to the screen size(on Phone It Slides on Laptop It Stays On top) -->
+                
+                <div class="userIcon">
+                    <img src="./images/user.jpg" alt="user-icon">
+                    <p>Hi Nwokolo Matthew</p>
+                </div>
+
+                <ul>
+          <!-- <li><a href="">My Profile</a></li> -->
+                    <li><a href="">Sign up</a></li>
+                    <li><a href="">Sign In</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Contact Me</a></li>
     
+                </ul>
+              
+            </div>
+            <!-- end of navlinks -->
+
+
+            <div class="logo">
+                <h2>SearchCom</h2>
+            </div>
+
+            <!-- <div class="user_icon">
+                <img src="" alt="">
+            </div> -->
+        </nav>
+        <!-- end of navBar -->
+
+
+        <div class="hero_container">
+            <div class="hero_container_content">
+                <h1>Search SearchCom</h1>
+                <p>Get the best offers in one place from thousands of stores online</p>
+
+                <div class="search_box_container">
+                    <form action="">
+                        <input type="text" name="" id="">
+                    </form>
+                    <select name="" id="" class="product_type"></select>
+                    <select name="" id="" class="country"></select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ham_buger_icon = document.querySelector('.ham_buger_icon');
+        const navlinks = document.querySelector('.navlinks');
+        ham_buger_icon.addEventListener('click',(e)=>{
+            e.preventDefault()
+
+            navlinks.classList.toggle('show');
+        })
+    </script>
 </body>
 </html>

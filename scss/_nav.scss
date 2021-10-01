@@ -1,0 +1,122 @@
+
+
+.navBar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .9rem 1rem;
+    font-size: 1rem;
+    background-color: $whiteText;
+    // border: 1px solid blue;
+
+
+    
+    .ham_buger_icon{
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: $grayColor;
+    }
+
+    .navlinks{
+        position: fixed;
+        top: 8%;
+        left: 0;
+        height: 100%;
+        background-color: $whiteText;
+        // border: 1px solid red;
+        width: 100%;
+        list-style-type: none;
+        padding: 1rem 1.3rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s ease-in-out;
+        &.show{
+            opacity: 1;
+            visibility:visible;
+            
+        }
+
+        .userIcon{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            margin: 8% 0;
+            margin-bottom: 9%;
+            // border: 1px solid yellow;
+            // border-radius: 50%;
+
+           
+            & img{
+                width: 30%;
+                border-radius: 50%;
+            }
+            & p{
+                width: 70%;
+                text-align: center;
+            }
+        }
+
+        & a{
+            color: $grayBlack;
+            font-weight: 500;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: .5rem 0;
+            display: inline-block;
+        }
+    }
+
+}
+
+
+@media screen and (min-width:920px) {
+    .navBar{
+        // font-size: 1rem;
+        flex-direction: row-reverse;
+        .navlinks{
+            position: revert;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            // justify-content: space-between;
+            padding: 0 1rem;
+            width: 60%;
+            & ul{
+                justify-content: space-between;
+                display: flex;
+                // border: 1px solid green;
+                width: 80%;
+                list-style-type: none;
+                font-size: 1rem;
+                margin-right: 5%;
+       
+            }
+        
+            .userIcon{
+                // border: 1px solid yellow;
+                width: 7%;
+                margin: revert;
+
+                & img{
+                    width: 100%;
+                    border-radius: 50%;
+                }
+                & p{
+                    display: none;
+                    width: 0;
+                }  
+            }
+        }
+
+        .ham_buger_icon{
+           display: none;
+        }
+        .logo{
+            width: 20%;
+            // border: 1px solid pink;
+
+        }
+    }   
+}

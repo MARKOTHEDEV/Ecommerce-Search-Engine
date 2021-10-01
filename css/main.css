@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.navBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  background-color: #ffffff;
+}
+.navBar .ham_buger_icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #9e9ea7;
+}
+.navBar .navlinks {
+  position: fixed;
+  top: 8%;
+  left: 0;
+  height: 100%;
+  background-color: #ffffff;
+  width: 100%;
+  list-style-type: none;
+  padding: 1rem 1.3rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.navBar .navlinks.show {
+  opacity: 1;
+  visibility: visible;
+}
+.navBar .navlinks .userIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8% 0;
+  margin-bottom: 9%;
+}
+.navBar .navlinks .userIcon img {
+  width: 30%;
+  border-radius: 50%;
+}
+.navBar .navlinks .userIcon p {
+  width: 70%;
+  text-align: center;
+}
+.navBar .navlinks a {
+  color: #6e6d7a;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  display: inline-block;
+}
+
+@media screen and (min-width: 920px) {
+  .navBar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .navBar .navlinks {
+    position: revert;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 0 1rem;
+    width: 60%;
+  }
+  .navBar .navlinks ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 80%;
+    list-style-type: none;
+    font-size: 1rem;
+    margin-right: 5%;
+  }
+  .navBar .navlinks .userIcon {
+    width: 7%;
+    margin: revert;
+  }
+  .navBar .navlinks .userIcon img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .navBar .navlinks .userIcon p {
+    display: none;
+    width: 0;
+  }
+  .navBar .ham_buger_icon {
+    display: none;
+  }
+  .navBar .logo {
+    width: 20%;
+  }
+}
