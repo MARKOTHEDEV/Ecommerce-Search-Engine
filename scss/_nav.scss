@@ -10,7 +10,6 @@
     background-color: $whiteText;
     // border: 1px solid blue;
 
-
     
     .ham_buger_icon{
         font-size: 1.2rem;
@@ -20,6 +19,8 @@
 
     .navlinks{
         position: fixed;
+    z-index: 70;
+
         top: 8%;
         left: 0;
         height: 100%;
@@ -83,6 +84,8 @@
             // justify-content: space-between;
             padding: 0 1rem;
             width: 60%;
+            opacity: 1;
+            visibility: visible;
             & ul{
                 justify-content: space-between;
                 display: flex;
