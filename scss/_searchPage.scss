@@ -1,0 +1,107 @@
+.shop-header{
+    // border: 1px solid red;
+}
+
+.hero_container{
+    // border: 1px solid teal;
+ 
+    background: $HeroGradient
+    ,url('../images/searchBackground.jpg') no-repeat center / cover;
+
+    text-align: center;
+
+
+    .hero_container_content{
+        color: $whiteText;
+        padding: 1rem;
+        // line-height: 2rem;
+        h1{
+            font-size: 1.8rem;
+            padding: 1rem 0;
+        }
+    }
+
+   
+}
+
+
+
+.search_box_container{
+    
+    width: 90%;
+    border-radius: 10px;
+    margin: 0 auto;
+    // border: 1px solid red;
+    transform: translateY(30px);
+  
+    box-shadow: -1px 10px 49px -13px rgba(0,0,0,0.51);
+
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: .5rem .8rem;
+    // this varaible is used for the inpout and select so they will align together
+    $paddingTop:.8rem;
+
+
+
+    .search_box_containe__sesrch_icon{
+   color:   $grayColor;
+        opacity: .6;
+        padding: 0 .4rem;
+    }
+    .divder{
+        background-color:   $grayColor;
+        opacity: .3;
+        width: 2px;
+        height: 38px;
+        // border: 1px solid green; 
+    // padding: .5rem 0;
+      
+
+    }
+    form{
+        width: 60%;
+        // border: 1px solid red; 
+        & input{
+            border: transparent; 
+            padding: .8rem .8rem;
+            width: 100%; 
+            
+            &::placeholder{
+                opacity: .2;
+                padding: 0 .4rem;
+                font-size: 1rem;
+
+            }
+        }
+    }
+
+    .search_box_container__select_box{
+        // border: 1px solid yellow; 
+
+        width: 40%;  
+        position: relative;
+        select{
+
+            cursor: pointer;
+            padding: .8rem .7rem;
+            width: 100%;  
+            appearance: none;
+            border: transparent;
+            font-weight: 500;
+
+
+        
+    
+        }
+
+        .search_box_container__drop_down{
+            position: absolute;
+            top: 30%;
+            right: 13%;
+            pointer-events: none;
+        }
+    }
+
+}
