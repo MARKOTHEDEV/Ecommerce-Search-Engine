@@ -232,3 +232,45 @@ body {
   right: 13%;
   pointer-events: none;
 }
+
+@media screen and (min-width: 800px) {
+  .hero_container {
+    height: 50vh;
+  }
+  .hero_container .hero_container_content {
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    width: 50%;
+  }
+  .hero_container .hero_container_content h1 {
+    font-size: 3rem;
+  }
+  .hero_container .hero_container_content p {
+    font-size: 1.3rem;
+  }
+
+  .search_box_container {
+    max-width: 500px;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  .search_box_container form {
+    width: 80%;
+  }
+  .search_box_container .search_box_container__select_box {
+    width: 20%;
+  }
+}
