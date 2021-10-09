@@ -373,7 +373,13 @@ body {
   .search_box_container form {
     width: 80%;
   }
+  .search_box_container form input {
+    outline: none;
+  }
   .search_box_container .search_box_container__select_box {
     width: 20%;
+  }
+  .search_box_container .search_box_container__select_box select {
+    outline: none;
   }
 }

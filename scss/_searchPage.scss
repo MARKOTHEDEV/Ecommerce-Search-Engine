@@ -142,6 +142,10 @@
         form{
             width: 80%;
             // border: 1px solid red;
+
+            input{
+                outline: none;
+            }
         }
         
         .search_box_container__select_box{
@@ -149,6 +153,9 @@
             width: 20%;  
             // border: 1px solid yellow;
 
+            select{
+                outline: none;
+            }
 
         }
     
