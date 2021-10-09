@@ -1,0 +1,120 @@
+@import "./uitility";
+
+
+.add_collection_container{
+    // border: 1px solid red;
+    
+    
+
+    background-color: white;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    transform: translateY(40px);
+    padding: 1rem;
+    position: relative;
+
+    .add_collection_containe__close_icon{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        right: 2%;
+       top: 2%;
+       font-size:1.5rem;
+    }
+     
+
+    p.add_collection_container__title{
+        padding: .3rem 0;
+        border-bottom: .5px solid rgba(58, 56, 56,.2);
+       
+    }
+ 
+
+
+    .add_collection_container__list_existing_collection{
+        // background-color: red  ;
+        height: 320px;
+        overflow: scroll;
+        .add_collection_container__existing_collection_box{
+           
+            border: 1px solid rgba(0, 0, 0,.3);
+            border-radius: 10px;
+            padding: .5rem;
+            margin: 10px 0;
+            cursor: pointer;
+            height: 100px;
+
+           
+            & > div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 300px;
+            }
+
+            &:hover{
+                background-color: rgba(0, 0, 0,.1);
+            }
+            &.selected{
+                background: $HeroGradient;
+            }
+
+            .existing_collection_box__image{
+                width: 30%;
+                
+
+                img{
+                    width: 100%;
+                    height:85px;
+                    object-fit: contain;
+                }
+            }
+
+            .existing_collection_box__more_info{
+                width: 66%;
+                line-height: 1.5rem;
+                h2{
+                    font-size: 1rem;
+                }
+
+                .existing_collection_box__num_of_shots{
+                    font-size: .8rem;
+                    opacity: .8;
+                }
+            }
+        }
+    }
+
+    .button_container{
+        display: flex;
+        // border: 1px solid red;
+        padding: 1rem .8rem;
+        justify-content: space-between;
+
+    }
+}
+
+.add_collection_background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%; 
+    height: 100%;
+    z-index: 200; 
+}
+
+@media screen and (min-width:801px){
+    
+    .add_collection_background{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    .add_collection_container{
+     width: 80%;
+     max-width: 900px;
+ }   
+}
