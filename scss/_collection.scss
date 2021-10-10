@@ -1,7 +1,7 @@
 @import "./uitility";
 
 
-.add_collection_container{
+.floating_modal_container{
     // border: 1px solid red;
     
     
@@ -14,7 +14,7 @@
     padding: 1rem;
     position: relative;
 
-    .add_collection_containe__close_icon{
+    .floating_modal_containe__close_icon{
         cursor: pointer;
         display: block;
         position: absolute;
@@ -24,7 +24,7 @@
     }
      
 
-    p.add_collection_container__title{
+    p.floating_modal_container__title{
         padding: .3rem 0;
         border-bottom: .5px solid rgba(58, 56, 56,.2);
        
@@ -94,8 +94,16 @@
 
     }
 }
+.floating_modal_background#add_collection_background{
+    display: none;
+}
 
-.add_collection_background{
+.floating_modal_background#create_collection_background{
+    display: none;
+}
+
+
+.floating_modal_background{
     position: fixed;
     top: 0;
     left: 0;
@@ -107,14 +115,18 @@
 
 @media screen and (min-width:801px){
     
-    .add_collection_background{
+    .floating_modal_background{
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .floating_modal_background#add_collection_background{
         display: none;
     }
-    .add_collection_container{
+
+
+    .floating_modal_container{
      width: 80%;
-     max-width: 900px;
+     max-width: 600px;
  }   
 }
