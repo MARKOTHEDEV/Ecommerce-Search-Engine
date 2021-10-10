@@ -12,14 +12,14 @@
     <div class="container">
 
         <!-- start of Add  Shot to a collection -->
-        <div class="add_collection_background">
-            <div class="add_collection_container">
-                <p class="add_collection_container__title">Add this Shot to a collection</p>
+        <div class="floating_modal_background" id="add_collection_background">
+            <div class="floating_modal_container" id="add_collection_container">
+                <p class="floating_modal_container__title">Add this Shot to a collection</p>
     
-                <i class="fas fa-times-circle add_collection_containe__close_icon"></i>
+                <i class="fas fa-times-circle floating_modal_containe__close_icon"></i>
     
-                <div class="small_search_field">
-                    <input type="search" placeholder="Filter collections">
+                <div class="">
+                    <input type="search" class="input_field"  placeholder="Filter collections">
                 </div>
                 
 
@@ -104,10 +104,47 @@
                 </div>
             </div>
         </div>
-        
-       
-
         <!-- end of Add  Shot to a collection -->
+
+        <!--  start of  create collection modal-->
+
+        <div class="floating_modal_background" id="create_collection_background">
+            <div class="floating_modal_container" id="create_collection_container">
+                <p class="floating_modal_container__title">Create a New collection</p>
+    
+                <i class="fas fa-times-circle floating_modal_containe__close_icon"></i>
+    
+
+                <form action="" id="create-collection-form">
+                    <!-- this is were we submit or create a collection  -->
+                        <br>
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="search" class="input_field"  placeholder="Filter collections">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Description (optional)</label>
+                            <textarea name="" class="input_field" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                </form>
+                
+
+                
+                
+                <div class="button_container">
+                    <button class="btn main_btn">Create Collection</button>
+                    <button class="btn not_main_btn">Cancel</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- end of create collection modal-->
+
+
+
+
 
         <!-- start of navBar -->
         <nav class="navBar"> 
