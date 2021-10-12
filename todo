@@ -1,0 +1,11 @@
+create collection form -- done
+detail page of the product
+
+profile:
+    were all collection are located
+    were you can edit or delete your account
+
+
+
+note all the pane that appears need some kind of javascript to manipulate it but we set it to none for now
+because we plan on using react

@@ -289,6 +289,7 @@ body {
 .floating_modal_container .add_collection_container__list_existing_collection {
   height: 320px;
   overflow: scroll;
+  scrollbar-width: none;
 }
 .floating_modal_container .add_collection_container__list_existing_collection .add_collection_container__existing_collection_box {
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -427,6 +428,100 @@ body {
   background-color: white;
 }
 
+.card_detail_container {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 200;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: none;
+}
+.card_detail_container > div {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.card_detail_container .card_detail_container__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0.9rem;
+}
+.card_detail_container .card_detail_container__nav .card_detail__heading_title {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.card_detail_container .card_detail_container__nav .card_detail_close_icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.card_detail_container .card_detail_sub_nav {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.card_detail_container .card_detail_add_btn {
+  border: 1px solid rgba(17, 17, 17, 0.103);
+  padding: 0.4rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  cursor: pointer;
+  display: inline;
+}
+.card_detail_container .card_detail__main_pic {
+  width: 100%;
+}
+.card_detail_container .card_detail__main_pic img {
+  width: 100%;
+}
+.card_detail_container .card_detail__list_of_related_pics {
+  width: 100%;
+  padding-left: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2%;
+}
+.card_detail_container .card_detail__list_of_related_pics img {
+  width: 20%;
+  display: block;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .card_detail_container .card_detail__list_of_related_pics img {
+    width: 10%;
+  }
+}
 .hero_container {
   background: linear-gradient(315deg, #5d425775 0%, #a5c7b7d7 74%), url("../images/searchBackground.jpg") no-repeat center/cover;
   text-align: center;
