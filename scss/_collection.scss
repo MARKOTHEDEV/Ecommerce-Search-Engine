@@ -36,6 +36,7 @@
         // background-color: red  ;
         height: 320px;
         overflow: scroll;
+        scrollbar-width: none;
         .add_collection_container__existing_collection_box{
            
             border: 1px solid rgba(0, 0, 0,.3);
