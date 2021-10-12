@@ -1,0 +1,123 @@
+
+
+
+
+.card_detail_container{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    display: none;
+
+    & > div{
+        // border: 1px solid red;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .card_detail_container__nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem .9rem;
+
+
+        .card_detail__heading_title{
+            font-size: 1.6rem;
+            font-weight: 400;
+        }
+        .card_detail_close_icon{
+            font-size: 1.5rem;
+        cursor: pointer;
+            
+        }
+
+       
+        
+    }
+
+
+    .card_detail_sub_nav{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        justify-content: space-around;      
+        align-items: center;
+    flex-direction: row;
+    }
+
+    .card_detail_add_btn{
+        border: 1px solid rgba(17, 17, 17, 0.103);
+        padding: .4rem;
+        
+        font-size: 1.5rem;
+        border-radius: 5px;
+        transform: translateX(20px);
+        cursor: pointer;
+        display: inline;
+        }
+
+
+
+        .card_detail__main_pic{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+
+    .card_detail__list_of_related_pics{
+        width: 100%;
+        padding-left:  .9rem;
+
+        // display: grid;
+        // grid-template-columns: repeat(2,1fr);
+        // padding: 1rem;
+        // gap: 10px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 2%;
+
+        img{
+            width: 20%;
+            display: block;
+            padding: .3rem;
+            cursor: pointer;
+        }
+
+    }
+}   
+
+
+@media screen and (min-width:600px) {
+
+
+    .card_detail_container{
+        .card_detail__list_of_related_pics{
+            img{
+                width: 10%;
+            }
+       }
+    }
+
+}
+
+
+
+
+
+
+@media screen and (min-width:400px) {
+    
+
+
+
+
+}
