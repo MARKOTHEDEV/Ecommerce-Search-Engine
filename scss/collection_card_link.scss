@@ -7,13 +7,10 @@
     .collection_card_link_container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: 1fr 60px 40px;
         width: 90%;
         border: 1px solid red;
         grid-template-areas: 
-            "main_image main_image main_image"
-            "main_image main_image main_image"
-            "main_image main_image main_image"
             "main_image main_image main_image"
             "main_image1 main_image2 main_image3"
             "collection_card_link_container__extra_content collection_card_link_container__extra_content collection_card_link_container__extra_content"
@@ -22,7 +19,7 @@
 
         margin: 0 auto;
         transition: opacity .2s ease-in-out;
-        min-height: 300px;
+        // min-height: 300px;
 
     
         &:hover{
