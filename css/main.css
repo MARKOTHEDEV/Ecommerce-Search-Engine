@@ -586,7 +586,6 @@ body {
   margin: 0 auto;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  min-height: 400px;
 }
 .collection_card_links_list .collection_card_link_container:hover {
   opacity: 0.8;
