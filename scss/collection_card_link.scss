@@ -8,17 +8,20 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         width: 90%;
+        
         border: 1px solid red;
+        //  background-color: red;
         grid-template-areas: 
             "main_image main_image main_image"
             "main_image1 main_image2 main_image3"
             "collection_card_link_container__extra_content collection_card_link_container__extra_content collection_card_link_container__extra_content"
         ;
+        grid-auto-rows: minmax(50px,auto);
         gap: 10px;
 
         margin: 0 auto;
         transition: opacity .2s ease-in-out;
-        min-height: 600px;
+        // min-height: 500px;
 
     
         &:hover{
@@ -43,6 +46,7 @@
             grid-area: main_image;
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
+            height: 300px;
         }
 
 

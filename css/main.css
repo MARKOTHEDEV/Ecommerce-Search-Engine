@@ -583,11 +583,11 @@ body {
   border: 1px solid red;
   -ms-grid-rows: auto 10px auto 10px auto;
       grid-template-areas: "main_image main_image main_image" "main_image1 main_image2 main_image3" "collection_card_link_container__extra_content collection_card_link_container__extra_content collection_card_link_container__extra_content";
+  grid-auto-rows: minmax(50px, auto);
   gap: 10px;
   margin: 0 auto;
   -webkit-transition: opacity 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out;
-  min-height: 600px;
 }
 .collection_card_links_list .collection_card_link_container:hover {
   opacity: 0.8;
@@ -615,6 +615,7 @@ body {
   grid-area: main_image;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  height: 300px;
 }
 .collection_card_links_list .collection_card_link_container .collection_card_link__not_main_image1 {
   -ms-grid-row: 3;
