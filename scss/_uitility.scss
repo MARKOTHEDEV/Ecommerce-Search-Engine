@@ -2,3 +2,22 @@
     font-size: .8rem;
     opacity: .4;
 }
+
+.button_container{
+    display: flex;
+    // border: 1px solid red;
+    padding: 1rem .8rem;
+    justify-content: space-between;
+
+}
+
+
+.faded_text{
+    color: rgba(0, 0, 0, .5);
+}
+
+.linear_text{
+    color: transparent;
+    background: $HeroGradient;
+    background-clip:text ;
+}
