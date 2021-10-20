@@ -1,5 +1,7 @@
 
-
+.all_collection_header{
+    text-align: center;
+}
 
 .collection_card_links_list{
 
@@ -7,19 +9,21 @@
     .collection_card_link_container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 1fr 60px 40px;
+        grid-template-rows: 1fr 1fr 80% 50px;
+  
         width: 90%;
-        border: 1px solid red;
+        // border: 1px solid red;
         grid-template-areas: 
+            "main_image main_image main_image"
             "main_image main_image main_image"
             "main_image1 main_image2 main_image3"
             "collection_card_link_container__extra_content collection_card_link_container__extra_content collection_card_link_container__extra_content"
         ;
         gap: 10px;
 
-        margin: 0 auto;
+        margin: 10% auto;
         transition: opacity .2s ease-in-out;
-        // min-height: 300px;
+        min-height: 400px;
 
     
         &:hover{
@@ -31,13 +35,13 @@
             height: 100%;
             background-color: rgba(128, 128, 128, 0.1);
             outline: none;
+            display: block;
         }
 
         .collection_card_link_container__extra_content{
             grid-area: collection_card_link_container__extra_content;
             // border: 1px solid red;
             text-align: center;
-            
 
         }
         .collection_card_link__main_image{
@@ -65,10 +69,39 @@
         .collection_card_link__not_main_image3{
             grid-area: main_image3;
             border-bottom-right-radius: 10px;
-
-
+          
         }
 
         
     }
+}
+
+.profile_container{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+
+@media screen  and (min-width:628px){
+    .collection_card_links_list{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 30px 0;
+
+        .collection_card_link_container{
+            margin: unset;
+        }
+    }
+
+}
+
+
+@media screen  and (min-width:970px){
+    .collection_card_links_list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+
 }
