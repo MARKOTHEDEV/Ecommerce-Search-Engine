@@ -1,11 +1,35 @@
 create collection form -- done
-detail page of the product
+detail page of the product -- done
 
 profile:
-    were all collection are located
-    were you can edit or delete your account
+    were all collection are located -- done
+        detail-page for Each collection -- done
+    were you can edit or delete your account:
+
 
 
 
 note all the pane that appears need some kind of javascript to manipulate it but we set it to none for now
 because we plan on using react
+
+
+add dark Mode
+blackness - #1a1a1a
+whiteness - #ffffff
+
+{
+    "all_products":[
+        {id:0,name:"gucciPecakcoat",price:2.00},
+        {id:1,name:"GevnicPecakcoat",price:100.00},
+        {id:2,name:"Sico ecakcoat",price:40.00},
+    ],
+    all_collection:[
+        //each collection will be Stored Here(Note Each Collection Store A Number Of BookMark Product)
+        {id:0,collection_name:"Kfp",products:[             
+            {id:0,name:"gucciPecakcoat",price:2.00},
+            {id:1,name:"GevnicPecakcoat",price:100.00},
+        ]},
+    ],
+
+    user:{authToken:"743748373784",is_logged:true}    
+}

@@ -848,3 +848,66 @@ body {
   padding: 1rem 0;
   max-width: 500px;
 }
+
+.signInSignUp_main_container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.signInSignUp__detail_page {
+  width: 100%;
+  height: 100%;
+  border: 1px solid yellow;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.signInSignUp__detail_page form {
+  max-width: 416px;
+  margin: auto;
+}
+
+.signInSignUp__nicepics__container {
+  display: none;
+}
+.signInSignUp__nicepics__container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 958px) {
+  .signInSignUp_main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .signInSignUp_main_container .signInSignUp__detail_page {
+    width: 60%;
+  }
+  .signInSignUp_main_container .signInSignUp__nicepics__container {
+    display: block;
+    width: 40%;
+    position: relative;
+  }
+  .signInSignUp_main_container .signInSignUp__nicepics__container::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
